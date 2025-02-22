@@ -1,0 +1,33 @@
+.course-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    background-color: #023e7d;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid white;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  .row {
+    border-right: 3px solid #a8d5ba;
+  }
+  
+  .one {
+    font-weight: bold;
+    color: #a8d5ba;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  

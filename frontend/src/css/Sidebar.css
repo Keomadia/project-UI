@@ -1,0 +1,135 @@
+.sidebar a{ text-decoration: none; color: white;}
+.sidebar {
+    background-color: #02274f;
+    position: sticky;
+    top: 0;
+    color: white;
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28%;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+    .profile-img {
+        width: 30px;
+        height: 30px;font-weight: 800;
+        font-size: 0.8rem;   
+        transition: width 0.3s ease-in-out;
+        transition: height 0.3s ease-in-out;
+    }
+    
+}
+
+.sidebar.collapsed .profile-name,
+.sidebar.collapsed .menu-item span {
+    display: none;
+}
+
+.sidebar-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    color: #02274f;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.7rem;
+    transition: width 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+    font-family: 'Times New Roman' ,monospace    ;
+}
+.menu-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: #02427a;
+    margin-bottom: 5px;
+}
+
+.menu-item:hover {
+    background-color: #03467c;
+}
+
+
+.menu-dropdown {
+    position: relative;
+}
+
+.bottom-menu {
+    position: relative;
+}
+
+.bottom-menu .submenu {
+    bottom: 100%; 
+    top: auto;
+    transform: translateY(-10px);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.course-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+
+.course-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.course-list::-webkit-scrollbar-thumb {
+    background: #03467c;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        margin-bottom: 20px;
+        left: 0px;
+    }
+
+    .sidebar.open {
+      width: 35%;
+    }
+
+  
+}
+@media screen and (max-width: 500px) {
+    .sidebar.open {
+        width: 100%;
+        z-index: 100;
+        position: fixed;
+    }
+
+  
+}

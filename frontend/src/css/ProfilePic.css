@@ -1,0 +1,14 @@
+.img-person{    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(48, 48, 48);
+    background-color: #e3fff3;
+    color: #023e7d;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 7.0rem;
+    font-family: monospace ,'Times New Roman' ;
+  }

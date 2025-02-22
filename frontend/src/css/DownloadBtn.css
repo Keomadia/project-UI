@@ -1,0 +1,15 @@
+.download-btn-cont {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    p{color: rgb(43, 43, 43); font-weight: 600; padding: 10px 0px;}
+    button {
+        width: 35%;
+        padding: 15px;
+        background-color: #023e7d;
+        border: none;
+        border-radius: 10px;
+        font-size: 0.9em;
+    }
+    button:hover{ transform: scale(1.03);}
+}
